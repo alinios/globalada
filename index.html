@@ -3,210 +3,402 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Global Ada SRL</title>
-<meta name="description" content="SC Global Ada SRL, atelier de tâmplărie din anul 2000. Mese și scaune din lemn, Sighetu Marmației, Maramureș.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Global Ada | Mese și scaune din lemn, Sighetu Marmației</title>
+<meta name="description" content="SC Global Ada SRL, atelier de tâmplărie din anul 2000. Mese și scaune din lemn de fag, finisate în culoarea aleasă de client. Sighetu Marmației, Maramureș.">
+<meta name="theme-color" content="#eef1f5">
+<link rel="canonical" href="https://globalada.ro/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Global Ada">
+<meta property="og:title" content="Global Ada | Mese și scaune din lemn">
+<meta property="og:description" content="Atelier de tâmplărie din anul 2000. Mese și scaune din lemn de fag, Sighetu Marmației.">
+<meta property="og:url" content="https://globalada.ro/">
+<meta property="og:image" content="https://globalada.ro/img/hero-set-alb-scaune-turcoaz-1029.jpg">
+<meta property="og:image:width" content="1029">
+<meta property="og:image:height" content="785">
+<meta property="og:image:alt" content="Masă albă cu scaune din lemn alb tapițate în turcoaz">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/hanken-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/hanken-400-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" href="img/hero-set-alb-scaune-turcoaz-768.webp" imagesrcset="img/hero-set-alb-scaune-turcoaz-480.webp 480w, img/hero-set-alb-scaune-turcoaz-768.webp 768w, img/hero-set-alb-scaune-turcoaz-1029.webp 1029w" imagesizes="(min-width: 900px) 56vw, 100vw">
+<script>document.documentElement.classList.add('js')</script>
 <style>
-:root{--accent:#ef6f49;--beige:#f7f3ec;--navy:#1a2545;--text:#666;--head:#333}
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-400-latin.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-400-latin-ext.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4}
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-500-latin.woff2) format("woff2");font-weight:500;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-500-latin-ext.woff2) format("woff2");font-weight:500;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4}
+:root{
+ --white:#fff;--sand:#f7f3ec;--pale:#eef1f5;--ink:#333;--muted:#5c5c5c;--accent:#ef6f49;
+ --margin:clamp(16px,5vw,72px);--gap:clamp(12px,2vw,28px);
+ --step-small:clamp(.875rem,.85rem + .1vw,.9375rem);
+ --step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);
+ --step-lead:clamp(1.375rem,1.1rem + 1vw,1.875rem);
+ --step-head:clamp(2rem,1.3rem + 3vw,3.75rem);
+ --step-display:clamp(2.5rem,5.3vw,6rem);
+ --space:clamp(48px,6vw,96px);
+}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font:14px/1.9 "Open Sans",Arial,sans-serif;color:var(--text);background:#fff}
-h1,h2,h3{font-family:Montserrat,Helvetica,Arial,sans-serif;font-weight:300;color:var(--head);margin:0 0 20px;line-height:1.25}
-h1{font-size:clamp(34px,4.2vw,56px)}
-h2{font-size:clamp(30px,3.4vw,44px)}
-h3{font-size:clamp(20px,1.9vw,24px);font-weight:400}
-p{margin:0 0 20px}
-img{max-width:100%;height:auto;display:block}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-.label{display:block;font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);line-height:1;margin-bottom:22px}
-.bar{display:block;width:50px;height:2px;background:var(--accent);margin-bottom:26px}
+html{scroll-behavior:smooth;scroll-padding-top:24px;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--white);color:var(--ink);font:400 var(--step-body)/1.5 "Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:-.01em}
+h1,h2,h3,p,figure,dl,dd,ul{margin:0;padding:0}
+ul{list-style:none}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration-line:underline;text-decoration-thickness:2px;text-decoration-color:var(--accent);text-underline-offset:.22em;transition:text-decoration-color .2s;touch-action:manipulation}
+a:hover{text-decoration-color:currentColor}
+:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+::selection{background:var(--accent);color:#fff}
+[id]{scroll-margin-top:24px}
+.skip{position:absolute;left:-9999px;top:12px;background:var(--white);color:var(--ink);padding:10px 16px;z-index:20}
+.skip:focus{left:var(--margin)}
+h1,h2,h3{font-weight:400;letter-spacing:-.03em;line-height:1.08;text-wrap:balance}
+h2{font-size:var(--step-head)}
+h3{font-size:var(--step-lead);line-height:1.15}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);padding-inline:var(--margin);max-width:1600px;margin-inline:auto}
+.small{font-size:var(--step-small);color:var(--muted)}
+.txt p+p{margin-top:1em}
+.cap{margin-top:10px;font-size:var(--step-small);color:var(--muted)}
+.band{padding-block:var(--space)}
+.sand{background:var(--sand)}
 
-header{position:fixed;top:0;left:0;right:0;height:54px;background:#fff;box-shadow:0 1px 0 #0000001a;z-index:10;display:flex;align-items:center}
-header a{padding:0 30px;color:var(--head);text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.02em;text-transform:uppercase}
-main{padding-top:54px}
+/* hero */
+.hero{background:var(--pale)}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:20px var(--margin) 8px;max-width:1600px;margin-inline:auto;width:100%}
+.bar a{text-decoration:none}
+.bar nav{display:flex;gap:clamp(18px,3vw,40px)}
+.bar nav a{text-decoration-line:underline}
+.mark{font-weight:500;letter-spacing:-.02em}
+.hero-grid{align-items:end;padding-bottom:var(--space);row-gap:24px}
+.hero-text{grid-column:1/7;grid-row:1}
+.hero h1{font-size:var(--step-display);line-height:1;letter-spacing:-.04em}
+.hero .lead{margin-top:clamp(16px,2vw,28px);font-size:var(--step-lead);line-height:1.25;max-width:20ch}
+.hero-pic{grid-column:7/13;grid-row:1;align-self:end}
+.hero-pic img{width:100%}
 
-.s0{display:grid;grid-template-columns:45% 55%;background:linear-gradient(90deg,rgba(210,218,228,.38) 45%,#fff 45%);min-height:640px;align-items:center}
-.s0 .pic{padding:60px 0 60px 8%;justify-self:end;width:100%;max-width:560px;margin-right:-80px;position:relative;z-index:1}
-.s0 .pic img{width:100%;box-shadow:0 20px 50px #0002}
-.s0 .txt{padding:60px 8% 60px 120px;max-width:760px}
-.s0 .txt p{font-size:13px;line-height:1.9;color:#555}
+/* atelier */
+.atelier{row-gap:24px;align-items:start}
+.atelier h2{grid-column:1/9;grid-row:1}
+.atelier .txt{grid-column:1/7;grid-row:2}
+.atelier .statement{grid-column:8/13;grid-row:2;font-size:var(--step-lead);line-height:1.3;letter-spacing:-.02em}
 
-.s1{padding:100px 0 60px}
-.s1 p.big{font-size:clamp(22px,2.4vw,30px);line-height:1.55;font-weight:300;color:#444;max-width:780px;margin:0}
+/* galerie */
+.gal{row-gap:clamp(24px,3vw,40px)}
+.gal h2{grid-column:1/13;max-width:20ch}
+.gal .txt{grid-column:1/5;grid-row:2}
+.gal .f1{grid-column:5/9;grid-row:2}
+.gal .f2{grid-column:9/13;grid-row:2;margin-top:clamp(0px,5vw,72px)}
 
-.s2{display:grid;grid-template-columns:45% 55%;align-items:stretch;padding-bottom:80px}
-.s2 .txt{padding:60px 40px 60px max(24px,calc(50vw - 540px + 24px))}
-.s2 .txt p{font-size:clamp(16px,1.7vw,21px);font-weight:300;line-height:1.7;color:#555}
-.s2 .panel{background:var(--beige);display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:50px 40px;align-content:start}
-.s2 .panel img:nth-child(2){margin-top:60px}
+/* mese */
+.aside{grid-column:1/5;position:sticky;top:24px;align-self:start}
+.aside h2{margin-bottom:20px}
+.models{grid-column:5/13;display:grid;gap:clamp(36px,4.5vw,64px)}
+.model{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:start}
+.info h3{margin-bottom:10px}
+.sizes{display:grid;grid-template-columns:repeat(auto-fill,minmax(7.5rem,1fr));gap:6px;margin-top:14px;font-variant-numeric:tabular-nums}
+.sizes li{background:var(--white);padding:10px 12px;font-weight:500;font-size:var(--step-small);color:var(--ink);white-space:nowrap}
 
-.sb{background:var(--beige);padding:90px 0}
-.sb .intro{max-width:760px;margin-bottom:50px}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:30px;align-items:start}
-.card{background:#fff;padding:40px}
-.card h3{margin-bottom:16px}
-.card p{font-size:13px}
-.row img{width:100%}
-table{border-collapse:collapse;width:100%;font-size:13px;text-align:center;margin-top:10px}
-th,td{border:1px solid #e3e3e3;padding:4px 8px}
-th{font-weight:600;color:var(--head)}
-.card ul{margin:0 0 18px;padding:0 0 0 18px;font-size:13px}
-.card .k{font-weight:600;color:var(--head);font-size:13px;margin:18px 0 4px}
-.row.chairs{align-items:center}
+/* scaune */
+.head{display:grid;grid-template-columns:subgrid;grid-column:1/13;row-gap:20px;align-items:start}
+.head h2{grid-column:1/7}
+.head .intro{grid-column:7/13;max-width:46ch}
+.chairs{grid-column:1/13;display:grid;grid-template-columns:repeat(4,1fr);background:var(--sand);margin-top:clamp(28px,4vw,56px)}
+.chair{display:contents}
+.chair.a figure{grid-column:1}
+.chair.a .spec{grid-column:2}
+.chair.b .spec{grid-column:3}
+.chair.b figure{grid-column:4}
+.chair figure{grid-row:1}
+.chair .spec{grid-row:1}
+.chair figure img{width:100%;height:100%;object-fit:cover}
+.chair.a figure img{object-position:56% 50%}
+.chair.b figure img{object-position:59% 50%}
+.chair .spec{padding:clamp(24px,3vw,44px)}
+.chair h3{margin-bottom:16px}
+.chair dl{display:grid;grid-template-columns:1fr auto;gap:8px 16px;font-size:var(--step-small)}
+.chair dt{color:var(--muted)}
+.chair dd{text-align:right;font-variant-numeric:tabular-nums}
+.colors{margin-top:24px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chips li{background:var(--white);padding:8px 12px;font-weight:500;font-size:var(--step-small)}
 
-.s5{background:var(--navy);color:#fff;padding:90px 0 80px}
-.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
-.s5 h4{font:500 13px/1 Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase;margin:0 0 24px;color:var(--accent)}
-.s5 p{font-size:14px;line-height:1.9;color:#ffffffcc;margin:0 0 14px}
-.s5 a{color:#fff}
-.btn{display:inline-block;margin-top:60px;background:var(--accent);color:#fff;text-decoration:none;font:500 13px/1 Montserrat,sans-serif;letter-spacing:.12em;padding:20px 38px}
-.btn:hover{background:#d95a35}
-.social{margin-top:60px;display:inline-flex;gap:16px;margin-left:24px;vertical-align:middle}
-.social a{width:40px;height:40px;border:1px solid #fff5;border-radius:50%;display:grid;place-items:center;font:600 13px Montserrat,sans-serif;text-decoration:none}
-.social a:hover{background:#fff2}
-footer{background:#fff;text-align:center;padding:28px 0;font-size:12px;color:#999}
+/* contact */
+.contact{row-gap:clamp(28px,4vw,56px)}
+.contact h2{grid-column:1/5;grid-row:1}
+.reach{grid-column:6/13;grid-row:1}
+.reach .mail{display:inline-block;font-size:clamp(1.5rem,.6rem + 3.6vw,3.5rem);letter-spacing:-.03em;line-height:1.1;overflow-wrap:anywhere}
+.phones{margin-top:clamp(16px,2vw,28px)}
+.phones li{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding-block:8px;font-size:var(--step-lead);letter-spacing:-.02em}
+.phones span{font-size:var(--step-body);color:var(--muted);letter-spacing:-.01em}
+.facts{grid-column:6/13;grid-row:2;display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+.facts h3{font-size:var(--step-small);color:var(--muted);margin-bottom:10px;font-weight:500;letter-spacing:0}
+.facts p{font-size:var(--step-body)}
+.foot{grid-column:1/13;grid-row:3}
 
-@media(max-width:900px){
- .s0,.s2{grid-template-columns:1fr;background:none}
- .s0{background:linear-gradient(180deg,rgba(210,218,228,.38) 45%,#fff 45%)}
- .s0 .pic{padding:40px 24px 0;margin:0 auto;max-width:520px}
- .s0 .txt{padding:40px 24px}
- .s2 .txt{padding:40px 24px}
- .s2 .panel{padding:30px 24px}
- .row,.cols{grid-template-columns:1fr}
- .row.chairs img{order:-1}
- .card{padding:28px 22px}
- .sb,.s5{padding:60px 0}
- .s1{padding:60px 0 30px}
- header a{padding:0 20px}
+/* motion */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
+.js .rv.in{opacity:1;transform:none}
+.js .wipe{clip-path:inset(0 0 100% 0);transition:clip-path 1.1s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in .wipe{clip-path:inset(0 0 0 0)}
+.js .hero-pic img{animation:settle 1.6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes settle{from{transform:scale(1.06);opacity:.2}to{transform:none;opacity:1}}
+.pic img,.f1 img,.f2 img,.chair img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.pic:hover img,.f1:hover img,.f2:hover img,.chair:hover img{transform:scale(1.025)}
+.pic,.f1,.f2,.chair figure{overflow:hidden}
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .js .rv,.js .wipe{opacity:1;transform:none;clip-path:none}
+}
+
+/* tablet and phone */
+@media (max-width:1199px){
+ .chairs{grid-template-columns:2fr 3fr}
+ .chair.a figure,.chair.a .spec,.chair.b .spec,.chair.b figure{grid-column:auto;grid-row:auto}
+}
+@media (max-width:899px){
+ .hero-grid{align-items:start}
+ .hero-text,.hero-pic{grid-column:1/13}
+ .hero-pic{grid-row:2;margin-right:calc(var(--margin)*-1)}
+ .hero .lead{max-width:24ch}
+ .atelier h2,.atelier .statement,.atelier .txt{grid-column:1/13;grid-row:auto;padding-top:0}
+ .gal h2,.gal .txt{grid-column:1/13;grid-row:auto}
+ .gal .f1{grid-column:1/8;grid-row:auto}
+ .gal .f2{grid-column:6/13;grid-row:auto;margin-top:0}
+ .head h2,.head .intro{grid-column:1/13}
+ .aside{grid-column:1/13;position:static}
+ .models{grid-column:1/13;margin-top:8px}
+ .chairs{grid-template-columns:1fr 1fr}
+ .chair.a figure,.chair.a .spec,.chair.b .spec,.chair.b figure{grid-column:auto;grid-row:auto}
+ .contact h2,.reach,.facts,.foot{grid-column:1/13;grid-row:auto}
+ .facts{grid-template-columns:1fr 1fr}
+ .facts>div:first-child{grid-column:1/3}
+}
+@media (max-width:599px){
+ .model{grid-template-columns:1fr}
+ .chairs{grid-template-columns:1fr}
+}
+@media (max-width:479px){
+ .gal .f1{grid-column:1/11}
+ .gal .f2{grid-column:3/13}
+ .chair figure{max-width:100%}
+ .facts{grid-template-columns:1fr}
+ .facts>div:first-child{grid-column:auto}
+ .phones li{flex-direction:column;gap:0}
+ .sizes{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
 <body>
-<header><a href="#top">SC Global Ada SRL</a></header>
+<a class="skip" href="#continut">Sari la conținut</a>
 
-<main id="top">
-<section class="s0">
-  <div class="pic"><img src="img/Screenshot_20250304_183826_Facebook-1.jpg" alt="Set de masă și scaune Global Ada" width="980" height="748"></div>
-  <div class="txt">
-    <h1>Global Ada SRL</h1>
-    <p>Înființată în anul 2000 ca un mic atelier de tâmplărie, SC GLOBAL ADA SRL a evoluat constant datorită ambiției și dorinței de a ne dezvolta. Prin seriozitate, promptitudine, calitate și profesionalism, am reușit să ne dotăm cu toate tipurile de utilaje necesare procesului de fabricație a meselor și scaunelor.</p>
-    <p>În prezent, producem două modele de scaune din lemn de fag, care pot fi finisate conform cerințelor clienților în culorile alb, negru, wenge, stejar sau nuc. De asemenea, oferim mese cu blat neextensibil, disponibil în dimensiuni variind din 20 în 20cm, începând de la 1,20m și atingând până la 3m.</p>
-    <p>Blatul meselor este fabricat din PAL de 34mm, bordurat cu lemn masiv și acoperit cu furnir natural de stejar, aplicat în presă caldă.</p>
+<header class="hero">
+  <div class="bar">
+    <a class="mark" translate="no" href="#top">Global Ada</a>
+    <nav aria-label="Principal"><a href="#mese">Mese</a><a href="#scaune">Scaune</a><a href="#contact">Contact</a></nav>
   </div>
+  <div class="grid hero-grid" id="top">
+    <div class="hero-text">
+      <h1>Mese și scaune din lemn</h1>
+      <p class="lead">Atelier de tâmplărie din anul 2000, în Sighetu Marmației.</p>
+    </div>
+    <div class="hero-pic">
+      <img src="img/hero-set-alb-scaune-turcoaz-1029.jpg"
+        srcset="img/hero-set-alb-scaune-turcoaz-480.webp 480w, img/hero-set-alb-scaune-turcoaz-768.webp 768w, img/hero-set-alb-scaune-turcoaz-1029.webp 1029w"
+        sizes="(min-width: 900px) 56vw, 100vw" width="1029" height="785" fetchpriority="high" decoding="async"
+        alt="Masă albă cu opt scaune din lemn alb, tapițate în turcoaz, într-o sufragerie">
+    </div>
+  </div>
+</header>
+
+<main id="continut">
+
+<section class="grid atelier band" aria-labelledby="t-atelier">
+  <h2 id="t-atelier" class="rv">Înființată în anul 2000</h2>
+    <div class="txt rv" style="--d:80ms">
+    <p>Ca un mic atelier de tâmplărie, SC GLOBAL ADA SRL a evoluat constant datorită ambiției și dorinței de a ne dezvolta. Prin seriozitate, promptitudine, calitate și profesionalism, am reușit să ne dotăm cu toate tipurile de utilaje necesare procesului de fabricație a meselor și scaunelor.</p>
+    <p>În prezent, producem două modele de scaune din lemn de fag, care pot fi finisate conform cerințelor clienților în culorile alb, negru, wenge, stejar sau nuc. De asemenea, oferim mese cu blat neextensibil, disponibil în dimensiuni variind din 20 în 20&nbsp;cm, începând de la 1,20&nbsp;m și atingând până la 3&nbsp;m.</p>
+    <p>Blatul meselor este fabricat din PAL de 34&nbsp;mm, bordurat cu lemn masiv și acoperit cu furnir natural de stejar, aplicat în presă caldă.</p>
+  </div>
+  <p class="statement rv" style="--d:160ms">La noi aveți posibilitatea de a personaliza produsul comandat, selectând culoarea lemnului, a tapițeriei și dimensiunea blatului de masă conform preferințelor dumneavoastră.</p>
 </section>
 
-<section class="s1"><div class="wrap">
-  <span class="label">Global Ada</span>
-  <p class="big">La noi aveți posibilitatea de a personaliza produsul comandat, selectând culoarea lemnului, a tapițeriei și dimensiunea blatului de masă conform preferințelor dumneavoastră.</p>
-</div></section>
-
-<section class="s2">
-  <div class="txt">
-    <span class="bar"></span>
+<section class="grid gal band" style="padding-top:0" aria-labelledby="t-gal">
+  <h2 id="t-gal" class="rv">Un strop de eleganță și confort în orice spațiu</h2>
+  <div class="txt rv" style="--d:80ms">
     <p>Seturile noastre de masă și scaune sunt alegerea perfectă pentru a aduce un strop de eleganță și confort în orice spațiu.</p>
     <p>Cu un design modern și linii curate, acest set transformă mesele cu familia sau prietenii în momente memorabile.</p>
     <p>Fie că este vorba de o cină în familie sau de o întâlnire cu prietenii, confortul scaunelor și stilul mesei vor crea o atmosferă plăcută și primitoare.</p>
   </div>
-  <div class="panel">
-    <img src="img/facebook_1741787452040_7305586077244814191.jpg" alt="Scaune din lemn" loading="lazy">
-    <img src="img/facebook_1741787687679_73055870655832441881.jpg" alt="Scaune din lemn" loading="lazy">
-  </div>
+  <figure class="f1 rv" style="--d:120ms">
+    <div class="wipe"><img src="img/scaune-lemn-alb-mov-601.jpg"
+      srcset="img/scaune-lemn-alb-mov-400.webp 400w, img/scaune-lemn-alb-mov-601.webp 601w"
+      sizes="(min-width: 900px) 28vw, 80vw" width="601" height="793" loading="lazy" decoding="async"
+      alt="Masă albă cu scaune din lemn alb tapițate în gri închis, cu un sfeșnic cu trei lumânări roșii"></div>
+  </figure>
+  <figure class="f2 rv" style="--d:200ms">
+    <div class="wipe"><img src="img/scaune-lemn-alb-gri-640.jpg"
+      srcset="img/scaune-lemn-alb-gri-400.webp 400w, img/scaune-lemn-alb-gri-640.webp 640w"
+      sizes="(min-width: 900px) 28vw, 80vw" width="640" height="849" loading="lazy" decoding="async"
+      alt="Masă lungă albă cu scaune albe tapițate în bej, într-o cameră cu perdele deschise la culoare"></div>
+  </figure>
 </section>
 
-<section class="sb" id="mese"><div class="wrap">
-  <div class="intro">
-    <h2>Mese</h2>
-    <p>Mesele cu blat neextensibil, disponibile în dimensiuni între 1,20m și 3m, au blat din PAL de 34mm, bordurat cu lemn masiv și acoperit cu furnir natural de stejar aplicat la presă caldă.</p>
+<section class="sand band" id="mese" aria-labelledby="t-mese">
+ <div class="grid">
+  <div class="aside">
+    <h2 id="t-mese" class="rv">Mese</h2>
+    <p class="intro rv" style="--d:80ms">Mesele cu blat neextensibil, disponibile în dimensiuni între 1,20&nbsp;m și 3&nbsp;m, au blat din PAL de 34&nbsp;mm, bordurat cu lemn masiv și acoperit cu furnir natural de stejar aplicat la presă caldă.</p>
   </div>
-
-  <div class="row">
-    <div class="card">
+  <div class="models">
+  <article class="model">
+    <figure class="pic rv">
+      <div class="wipe"><img src="img/masa-carina-scaun-cami-1080.jpg"
+        srcset="img/masa-carina-scaun-cami-480.webp 480w, img/masa-carina-scaun-cami-768.webp 768w, img/masa-carina-scaun-cami-1080.webp 1080w"
+        sizes="(min-width: 900px) 30vw, 100vw" width="1080" height="1173" loading="lazy" decoding="async"
+        alt="Masă albă lungă cu scaune albe tapițate în vișiniu, într-o sală luminoasă"></div>
+    </figure>
+    <div class="info rv" style="--d:80ms">
       <h3>Masa Carina cu scaun Cami</h3>
-      <p>Mesele au înălțimea de 78 cm, iar dimensiunile de lungime și lățime sunt conform tabelului.</p>
-      <table><tr><th>Lungime</th><th>Lățime</th></tr>
-        <tr><td>1.60m</td><td>0.80m</td></tr><tr><td>1.80m</td><td>0.90m</td></tr><tr><td>2.0m</td><td>0.90m</td></tr><tr><td>2.2m</td><td>1.00m</td></tr><tr><td>2.4m</td><td>1.00m</td></tr><tr><td>2.6m</td><td>1.00m</td></tr><tr><td>2.8m</td><td>1.00m</td></tr><tr><td>3.0m</td><td>1.00m</td></tr></table>
+      <p class="small">Mesele au înălțimea de 78&nbsp;cm, iar dimensiunile de lungime și lățime sunt cele de mai jos.</p>
+      <ul class="sizes" aria-label="Lungime × lățime">
+        <li>1,60 × 0,80&nbsp;m</li><li>1,80 × 0,90&nbsp;m</li><li>2,00 × 0,90&nbsp;m</li><li>2,20 × 1,00&nbsp;m</li>
+        <li>2,40 × 1,00&nbsp;m</li><li>2,60 × 1,00&nbsp;m</li><li>2,80 × 1,00&nbsp;m</li><li>3,00 × 1,00&nbsp;m</li>
+      </ul>
+      <p class="cap">Lungime × lățime</p>
     </div>
-    <img src="img/Screenshot_20250304_183935_Facebook-1.jpg" alt="Masa Carina cu scaun Cami" loading="lazy">
-  </div>
+  </article>
 
-  <div class="row">
-    <img src="img/Screenshot_20250304_183614_Facebook.jpg" alt="Masa Daria cu scaun Georgiana" loading="lazy">
-    <div class="card">
+  <article class="model">
+    <figure class="pic rv">
+      <div class="wipe"><img src="img/masa-daria-scaun-georgiana-980.jpg"
+        srcset="img/masa-daria-scaun-georgiana-480.webp 480w, img/masa-daria-scaun-georgiana-768.webp 768w, img/masa-daria-scaun-georgiana-980.webp 980w"
+        sizes="(min-width: 900px) 30vw, 100vw" width="980" height="1270" loading="lazy" decoding="async"
+        alt="Masă lungă crem cu scaune tapițate în bej, lângă o vitrină din lemn"></div>
+    </figure>
+    <div class="info rv" style="--d:80ms">
       <h3>Masa Daria cu scaun Georgiana</h3>
-      <p>Mesele au înălțimea de 78 cm, iar dimensiunile de lungime și lățime sunt conform tabelului.</p>
-      <table><tr><th>Lungime</th><th>Lățime</th></tr>
-        <tr><td>1.60m</td><td>0.80m</td></tr><tr><td>1.80m</td><td>0.90m</td></tr><tr><td>2.0m</td><td>0.90m</td></tr><tr><td>2.2m</td><td>1.00m</td></tr><tr><td>2.4m</td><td>1.00m</td></tr><tr><td>2.6m</td><td>1.00m</td></tr><tr><td>2.8m</td><td>1.00m</td></tr><tr><td>3.0m</td><td>1.00m</td></tr></table>
+      <p class="small">Mesele au înălțimea de 78&nbsp;cm, iar dimensiunile de lungime și lățime sunt cele de mai jos.</p>
+      <ul class="sizes" aria-label="Lungime × lățime">
+        <li>1,60 × 0,80&nbsp;m</li><li>1,80 × 0,90&nbsp;m</li><li>2,00 × 0,90&nbsp;m</li><li>2,20 × 1,00&nbsp;m</li>
+        <li>2,40 × 1,00&nbsp;m</li><li>2,60 × 1,00&nbsp;m</li><li>2,80 × 1,00&nbsp;m</li><li>3,00 × 1,00&nbsp;m</li>
+      </ul>
+      <p class="cap">Lungime × lățime</p>
     </div>
-  </div>
+  </article>
 
-  <div class="row">
-    <div class="card">
+  <article class="model">
+    <figure class="pic rv">
+      <div class="wipe"><img src="img/masa-ada-scaune-georgiana-1080.jpg"
+        srcset="img/masa-ada-scaune-georgiana-480.webp 480w, img/masa-ada-scaune-georgiana-768.webp 768w, img/masa-ada-scaune-georgiana-1080.webp 1080w"
+        sizes="(min-width: 900px) 30vw, 100vw" width="1080" height="810" loading="lazy" decoding="async"
+        alt="Masă din lemn de nuc cu șase scaune tapițate în gri, pe parchet"></div>
+    </figure>
+    <div class="info rv" style="--d:80ms">
       <h3>Masa Ada cu scaune Georgiana</h3>
-      <p>Mesele au înălțimea de 78 cm, iar dimensiunile de lungime și lățime sunt conform tabelului.</p>
-      <table><tr><th>Lungime</th><th>Lățime</th></tr>
-        <tr><td>1.20m</td><td>0.70m</td></tr><tr><td>1.40m</td><td>0.80m</td></tr><tr><td>1.60m</td><td>0.80m</td></tr><tr><td>1.80m</td><td>0.90m</td></tr><tr><td>2.0m</td><td>0.90m</td></tr><tr><td>2.2m</td><td>1.0m</td></tr><tr><td>2.4m</td><td>1.0m</td></tr><tr><td>2.6 m</td><td>1.0m</td></tr><tr><td>2.8m</td><td>1.0m</td></tr><tr><td>3.0m</td><td>1.0m</td></tr></table>
+      <p class="small">Mesele au înălțimea de 78&nbsp;cm, iar dimensiunile de lungime și lățime sunt cele de mai jos.</p>
+      <ul class="sizes" aria-label="Lungime × lățime">
+        <li>1,20 × 0,70&nbsp;m</li><li>1,40 × 0,80&nbsp;m</li><li>1,60 × 0,80&nbsp;m</li><li>1,80 × 0,90&nbsp;m</li><li>2,00 × 0,90&nbsp;m</li>
+        <li>2,20 × 1,00&nbsp;m</li><li>2,40 × 1,00&nbsp;m</li><li>2,60 × 1,00&nbsp;m</li><li>2,80 × 1,00&nbsp;m</li><li>3,00 × 1,00&nbsp;m</li>
+      </ul>
+      <p class="cap">Lungime × lățime</p>
     </div>
-    <img src="img/FB_IMG_1741098012086.jpg" alt="Masa Ada cu scaune Georgiana" loading="lazy">
+  </article>
   </div>
-</div></section>
+ </div>
+</section>
 
-<section class="sb" id="scaune" style="padding-top:0"><div class="wrap">
-  <div class="intro">
-    <h2>Scaune</h2>
-    <p>Scaunele Cami și Georgiana sunt realizate din lemn de fag și sunt finisate în culorile selectate de client. Pentru tapițare, utilizăm materiale țesute, cum ar fi stofa sau plușul.</p>
+<section class="band" id="scaune" aria-labelledby="t-scaune">
+ <div class="grid">
+  <div class="head">
+    <h2 id="t-scaune" class="rv">Scaune</h2>
+    <p class="intro rv" style="--d:80ms">Scaunele Cami și Georgiana sunt realizate din lemn de fag și sunt finisate în culorile selectate de client. Pentru tapițare, utilizăm materiale țesute, cum ar fi stofa sau plușul.</p>
   </div>
-  <div class="row chairs">
-    <img src="img/1000037020.jpg" alt="Scaun Cami" loading="lazy">
-    <div class="card">
-      <h3>Scaun Cami</h3>
-      <div class="k">Dimensiuni:</div>
-      <ul><li>înălțime totală: 1.05m</li><li>înălțime șezut: 0.47m</li><li>adâncime șezut: 0.41m</li><li>lățime față șezut: 0.47m</li></ul>
-      <div class="k">Culori disponibile la comandă:</div>
-      <p>alb, negru, wenge, stejar sau nuc</p>
-    </div>
-  </div>
-  <div class="row chairs">
-    <div class="card">
-      <h3>Scaun Georgiana</h3>
-      <div class="k">Dimensiuni:</div>
-      <ul><li>înălțime totală: 1.05m</li><li>înălțime șezut: 0.47m</li><li>adâncime șezut: 0.41m</li><li>lățime față șezut: 0.47m</li></ul>
-      <div class="k">Culori disponibile la comandă:</div>
-      <p>alb, negru, wenge, stejar sau nuc</p>
-    </div>
-    <img src="img/1000037024.jpg" alt="Scaun Georgiana" loading="lazy">
-  </div>
-</div></section>
 
-<section class="s5" id="contact"><div class="wrap">
-  <div class="cols">
-    <div>
-      <h4>Companie</h4>
-      <p><b>SC GLOBAL ADA SRL</b></p>
-      <p>Adresa: Str. Unirii Nr. 40<br>Oraș: Sighetu Marmatiei<br>Județ: Maramureș<br>Cod Poștal: 435500</p>
-    </div>
-    <div>
-      <h4>Persoana de contact</h4>
-      <p>Herbil Gheorghe<br>Tel: <a href="tel:+40727732954">0727 732 954</a></p>
-      <p>Felicia Silvia<br>Tel: <a href="tel:+40739490811">0739 490 811</a></p>
-      <p>E-mail: <a href="mailto:contact@globalada.ro">contact@globalada.ro</a></p>
-    </div>
-    <div>
-      <h4>Program</h4>
-      <p>Luni-Vineri: 9-17</p>
-      <p>Sâmbătă: 9-13</p>
-      <p>Duminică: Închis</p>
-    </div>
+  <div class="chairs rv">
+    <article class="chair a">
+      <figure>
+        <img src="img/scaun-cami-768.jpg"
+          srcset="img/scaun-cami-480.webp 480w, img/scaun-cami-768.webp 768w, img/scaun-cami-1152.webp 1152w"
+          sizes="(min-width: 900px) 24vw, 80vw" width="768" height="1024" loading="lazy" decoding="async"
+          alt="Scaunul Cami: lemn de fag brun închis, spătar înalt cu cinci lamele și tapițerie bej">
+      </figure>
+      <div class="spec">
+        <h3>Scaun Cami</h3>
+        <dl>
+          <dt>înălțime totală</dt><dd>1,05&nbsp;m</dd>
+          <dt>înălțime șezut</dt><dd>0,47&nbsp;m</dd>
+          <dt>adâncime șezut</dt><dd>0,41&nbsp;m</dd>
+          <dt>lățime față șezut</dt><dd>0,47&nbsp;m</dd>
+        </dl>
+        <div class="colors">
+        <p class="small">Culori disponibile la comandă</p>
+        <ul class="chips"><li>alb</li><li>negru</li><li>wenge</li><li>stejar</li><li>nuc</li></ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="chair b">
+      <figure>
+        <img src="img/scaun-georgiana-768.jpg"
+          srcset="img/scaun-georgiana-480.webp 480w, img/scaun-georgiana-768.webp 768w, img/scaun-georgiana-1152.webp 1152w"
+          sizes="(min-width: 900px) 24vw, 80vw" width="768" height="1024" loading="lazy" decoding="async"
+          alt="Scaunul Georgiana: lemn de fag brun închis, spătar curbat cu tapițerie albastru închis">
+      </figure>
+      <div class="spec">
+        <h3>Scaun Georgiana</h3>
+        <dl>
+          <dt>înălțime totală</dt><dd>1,05&nbsp;m</dd>
+          <dt>înălțime șezut</dt><dd>0,47&nbsp;m</dd>
+          <dt>adâncime șezut</dt><dd>0,41&nbsp;m</dd>
+          <dt>lățime față șezut</dt><dd>0,47&nbsp;m</dd>
+        </dl>
+        <div class="colors">
+        <p class="small">Culori disponibile la comandă</p>
+        <ul class="chips"><li>alb</li><li>negru</li><li>wenge</li><li>stejar</li><li>nuc</li></ul>
+        </div>
+      </div>
+    </article>
   </div>
-  <a class="btn" href="mailto:contact@globalada.ro?subject=Cerere%20ofert%C4%83">CERE O OFERTĂ</a>
-  <span class="social">
-    <a href="https://www.facebook.com/GlobalAda" aria-label="Facebook">f</a>
-    <a href="https://wa.me/40739490811" aria-label="WhatsApp">W</a>
-  </span>
-</div></section>
+ </div>
+</section>
 </main>
-<footer>Global Ada SRL</footer>
+
+<footer class="sand band" id="contact">
+  <div class="grid contact">
+    <h2 class="rv">Contact</h2>
+    <div class="reach rv" style="--d:80ms">
+      <a class="mail" href="mailto:contact@globalada.ro">contact@globalada.ro</a>
+      <ul class="phones">
+        <li><span>Herbil Gheorghe</span><a href="tel:+40727732954">0727&nbsp;732&nbsp;954</a></li>
+        <li><span>Felicia Silvia</span><a href="tel:+40739490811">0739&nbsp;490&nbsp;811</a></li>
+      </ul>
+    </div>
+    <div class="facts rv" style="--d:160ms">
+      <div>
+        <h3>Companie</h3>
+        <p><span translate="no">SC GLOBAL ADA SRL</span><br>Str.&nbsp;Unirii Nr.&nbsp;40<br>Sighetu Marmației, Maramureș<br>Cod poștal 435500</p>
+      </div>
+      <div>
+        <h3>Program</h3>
+        <p>Luni–Vineri: 9–17<br>Sâmbătă: 9–13<br>Duminică: închis</p>
+      </div>
+      <div>
+        <h3>Pe rețele</h3>
+        <p><a href="https://www.facebook.com/GlobalAda" rel="noopener">Facebook</a><br><a href="https://wa.me/40739490811" rel="noopener">WhatsApp</a></p>
+      </div>
+    </div>
+    <p class="small foot"><span translate="no">SC Global Ada SRL</span>, Sighetu Marmației</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+})();
+</script>
 </body>
 </html>

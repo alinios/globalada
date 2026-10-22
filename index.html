@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global Ada SRL</title>
+<meta name="description" content="SC Global Ada SRL, atelier de tâmplărie din anul 2000. Mese și scaune din lemn, Sighetu Marmației, Maramureș.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#ef6f49;--beige:#f7f3ec;--navy:#1a2545;--text:#666;--head:#333}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:14px/1.9 "Open Sans",Arial,sans-serif;color:var(--text);background:#fff}
+h1,h2,h3{font-family:Montserrat,Helvetica,Arial,sans-serif;font-weight:300;color:var(--head);margin:0 0 20px;line-height:1.25}
+h1{font-size:clamp(34px,4.2vw,56px)}
+h2{font-size:clamp(30px,3.4vw,44px)}
+h3{font-size:clamp(20px,1.9vw,24px);font-weight:400}
+p{margin:0 0 20px}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.label{display:block;font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);line-height:1;margin-bottom:22px}
+.bar{display:block;width:50px;height:2px;background:var(--accent);margin-bottom:26px}
+
+header{position:fixed;top:0;left:0;right:0;height:54px;background:#fff;box-shadow:0 1px 0 #0000001a;z-index:10;display:flex;align-items:center}
+header a{padding:0 30px;color:var(--head);text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.02em;text-transform:uppercase}
+main{padding-top:54px}
+
+.s0{display:grid;grid-template-columns:45% 55%;background:linear-gradient(90deg,rgba(210,218,228,.38) 45%,#fff 45%);min-height:640px;align-items:center}
+.s0 .pic{padding:60px 0 60px 8%;justify-self:end;width:100%;max-width:560px;margin-right:-80px;position:relative;z-index:1}
+.s0 .pic img{width:100%;box-shadow:0 20px 50px #0002}
+.s0 .txt{padding:60px 8% 60px 120px;max-width:760px}
+.s0 .txt p{font-size:13px;line-height:1.9;color:#555}
+
+.s1{padding:100px 0 60px}
+.s1 p.big{font-size:clamp(22px,2.4vw,30px);line-height:1.55;font-weight:300;color:#444;max-width:780px;margin:0}
+
+.s2{display:grid;grid-template-columns:45% 55%;align-items:stretch;padding-bottom:80px}
+.s2 .txt{padding:60px 40px 60px max(24px,calc(50vw - 540px + 24px))}
+.s2 .txt p{font-size:clamp(16px,1.7vw,21px);font-weight:300;line-height:1.7;color:#555}
+.s2 .panel{background:var(--beige);display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:50px 40px;align-content:start}
+.s2 .panel img:nth-child(2){margin-top:60px}
+
+.sb{background:var(--beige);padding:90px 0}
+.sb .intro{max-width:760px;margin-bottom:50px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:30px;align-items:start}
+.card{background:#fff;padding:40px}
+.card h3{margin-bottom:16px}
+.card p{font-size:13px}
+.row img{width:100%}
+table{border-collapse:collapse;width:100%;font-size:13px;text-align:center;margin-top:10px}
+th,td{border:1px solid #e3e3e3;padding:4px 8px}
+th{font-weight:600;color:var(--head)}
+.card ul{margin:0 0 18px;padding:0 0 0 18px;font-size:13px}
+.card .k{font-weight:600;color:var(--head);font-size:13px;margin:18px 0 4px}
+.row.chairs{align-items:center}
+
+.s5{background:var(--navy);color:#fff;padding:90px 0 80px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.s5 h4{font:500 13px/1 Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase;margin:0 0 24px;color:var(--accent)}
+.s5 p{font-size:14px;line-height:1.9;color:#ffffffcc;margin:0 0 14px}
+.s5 a{color:#fff}
+.btn{display:inline-block;margin-top:60px;background:var(--accent);color:#fff;text-decoration:none;font:500 13px/1 Montserrat,sans-serif;letter-spacing:.12em;padding:20px 38px}
+.btn:hover{background:#d95a35}
+.social{margin-top:60px;display:inline-flex;gap:16px;margin-left:24px;vertical-align:middle}
+.social a{width:40px;height:40px;border:1px solid #fff5;border-radius:50%;display:grid;place-items:center;font:600 13px Montserrat,sans-serif;text-decoration:none}
+.social a:hover{background:#fff2}
+footer{background:#fff;text-align:center;padding:28px 0;font-size:12px;color:#999}
+
+@media(max-width:900px){
+ .s0,.s2{grid-template-columns:1fr;background:none}
+ .s0{background:linear-gradient(180deg,rgba(210,218,228,.38) 45%,#fff 45%)}
+ .s0 .pic{padding:40px 24px 0;margin:0 auto;max-width:520px}
+ .s0 .txt{padding:40px 24px}
+ .s2 .txt{padding:40px 24px}
+ .s2 .panel{padding:30px 24px}
+ .row,.cols{grid-template-columns:1fr}
+ .row.chairs img{order:-1}
+ .card{padding:28px 22px}
+ .sb,.s5{padding:60px 0}
+ .s1{padding:60px 0 30px}
+ header a{padding:0 20px}
+}
+</style>
+</head>
+<body>
+<header><a href="#top">SC Global Ada SRL</a></header>
+
+<main id="top">
+<section class="s0">
+  <div class="pic"><img src="img/Screenshot_20250304_183826_Facebook-1-980x748.jpg" alt="Set de masă și scaune Global Ada" width="980" height="748"></div>
+  <div class="txt">
+    <h1>Global Ada SRL</h1>
+    <p>Înființată în anul 2000 ca un mic atelier de tâmplărie, SC GLOBAL ADA SRL a evoluat constant datorită ambiției și dorinței de a ne dezvolta. Prin seriozitate, promptitudine, calitate și profesionalism, am reușit să ne dotăm cu toate tipurile de utilaje necesare procesului de fabricație a meselor și scaunelor.</p>
+    <p>În prezent, producem două modele de scaune din lemn de fag, care pot fi finisate conform cerințelor clienților în culorile alb, negru, wenge, stejar sau nuc. De asemenea, oferim mese cu blat neextensibil, disponibil în dimensiuni variind din 20 în 20cm, începând de la 1,20m și atingând până la 3m.</p>
+    <p>Blatul meselor este fabricat din PAL de 34mm, bordurat cu lemn masiv și acoperit cu furnir natural de stejar, aplicat în presă caldă.</p>
+  </div>
+</section>
+
+<section class="s1"><div class="wrap">
+  <span class="label">Global Ada</span>
+  <p class="big">La noi aveți posibilitatea de a personaliza produsul comandat, selectând culoarea lemnului, a tapițeriei și dimensiunea blatului de masă conform preferințelor dumneavoastră.</p>
+</div></section>
+
+<section class="s2">
+  <div class="txt">
+    <span class="bar"></span>
+    <p>Seturile noastre de masă și scaune sunt alegerea perfectă pentru a aduce un strop de eleganță și confort în orice spațiu.</p>
+    <p>Cu un design modern și linii curate, acest set transformă mesele cu familia sau prietenii în momente memorabile.</p>
+    <p>Fie că este vorba de o cină în familie sau de o întâlnire cu prietenii, confortul scaunelor și stilul mesei vor crea o atmosferă plăcută și primitoare.</p>
+  </div>
+  <div class="panel">
+    <img src="img/facebook_1741787452040_7305586077244814191.jpg" alt="Scaune din lemn" loading="lazy">
+    <img src="img/facebook_1741787687679_73055870655832441881.jpg" alt="Scaune din lemn" loading="lazy">
+  </div>
+</section>
+
+<section class="sb" id="mese"><div class="wrap">
+  <div class="intro">
+    <h2>Mese</h2>
+    <p>Mesele cu blat neextensibil, disponibile în dimensiuni între 1,20m și 3m, au blat din PAL de 34mm, bordurat cu lemn masiv și acoperit cu furnir natural de stejar aplicat la presă caldă.</p>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <h3>Masa Carina cu scaun Cami</h3>
+      <p>Mesele au înălțimea de 78 cm, iar dimensiunile de lungime și lățime sunt conform tabelului.</p>
+      <table><tr><th>Lungime</th><th>Lățime</th></tr>
+        <tr><td>1.60m</td><td>0.80m</td></tr><tr><td>1.80m</td><td>0.90m</td></tr><tr><td>2.0m</td><td>0.90m</td></tr><tr><td>2.2m</td><td>1.00m</td></tr><tr><td>2.4m</td><td>1.00m</td></tr><tr><td>2.6m</td><td>1.00m</td></tr><tr><td>2.8m</td><td>1.00m</td></tr><tr><td>3.0m</td><td>1.00m</td></tr></table>
+    </div>
+    <img src="img/Screenshot_20250304_183935_Facebook-1-980x1064.jpg" alt="Masa Carina cu scaun Cami" loading="lazy">
+  </div>
+
+  <div class="row">
+    <img src="img/Screenshot_20250304_183614_Facebook.jpg" alt="Masa Daria cu scaun Georgiana" loading="lazy">
+    <div class="card">
+      <h3>Masa Daria cu scaun Georgiana</h3>
+      <p>Mesele au înălțimea de 78 cm, iar dimensiunile de lungime și lățime sunt conform tabelului.</p>
+      <table><tr><th>Lungime</th><th>Lățime</th></tr>
+        <tr><td>1.60m</td><td>0.80m</td></tr><tr><td>1.80m</td><td>0.90m</td></tr><tr><td>2.0m</td><td>0.90m</td></tr><tr><td>2.2m</td><td>1.00m</td></tr><tr><td>2.4m</td><td>1.00m</td></tr><tr><td>2.6m</td><td>1.00m</td></tr><tr><td>2.8m</td><td>1.00m</td></tr><tr><td>3.0m</td><td>1.00m</td></tr></table>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <h3>Masa Ada cu scaune Georgiana</h3>
+      <p>Mesele au înălțimea de 78 cm, iar dimensiunile de lungime și lățime sunt conform tabelului.</p>
+      <table><tr><th>Lungime</th><th>Lățime</th></tr>
+        <tr><td>1.20m</td><td>0.70m</td></tr><tr><td>1.40m</td><td>0.80m</td></tr><tr><td>1.60m</td><td>0.80m</td></tr><tr><td>1.80m</td><td>0.90m</td></tr><tr><td>2.0m</td><td>0.90m</td></tr><tr><td>2.2m</td><td>1.0m</td></tr><tr><td>2.4m</td><td>1.0m</td></tr><tr><td>2.6 m</td><td>1.0m</td></tr><tr><td>2.8m</td><td>1.0m</td></tr><tr><td>3.0m</td><td>1.0m</td></tr></table>
+    </div>
+    <img src="img/FB_IMG_1741098012086-980x735.jpg" alt="Masa Ada cu scaune Georgiana" loading="lazy">
+  </div>
+</div></section>
+
+<section class="sb" id="scaune" style="padding-top:0"><div class="wrap">
+  <div class="intro">
+    <h2>Scaune</h2>
+    <p>Scaunele Cami și Georgiana sunt realizate din lemn de fag și sunt finisate în culorile selectate de client. Pentru tapițare, utilizăm materiale țesute, cum ar fi stofa sau plușul.</p>
+  </div>
+  <div class="row chairs">
+    <img src="img/1000037020-768x1024.jpg" alt="Scaun Cami" loading="lazy">
+    <div class="card">
+      <h3>Scaun Cami</h3>
+      <div class="k">Dimensiuni:</div>
+      <ul><li>înălțime totală: 1.05m</li><li>înălțime șezut: 0.47m</li><li>adâncime șezut: 0.41m</li><li>lățime față șezut: 0.47m</li></ul>
+      <div class="k">Culori disponibile la comandă:</div>
+      <p>alb, negru, wenge, stejar sau nuc</p>
+    </div>
+  </div>
+  <div class="row chairs">
+    <div class="card">
+      <h3>Scaun Georgiana</h3>
+      <div class="k">Dimensiuni:</div>
+      <ul><li>înălțime totală: 1.05m</li><li>înălțime șezut: 0.47m</li><li>adâncime șezut: 0.41m</li><li>lățime față șezut: 0.47m</li></ul>
+      <div class="k">Culori disponibile la comandă:</div>
+      <p>alb, negru, wenge, stejar sau nuc</p>
+    </div>
+    <img src="img/1000037024-980x1307.jpg" alt="Scaun Georgiana" loading="lazy">
+  </div>
+</div></section>
+
+<section class="s5" id="contact"><div class="wrap">
+  <div class="cols">
+    <div>
+      <h4>Companie</h4>
+      <p><b>SC GLOBAL ADA SRL</b></p>
+      <p>Adresa: Str. Unirii Nr. 40<br>Oraș: Sighetu Marmatiei<br>Județ: Maramureș<br>Cod Poștal: 435500</p>
+    </div>
+    <div>
+      <h4>Persoana de contact</h4>
+      <p>Herbil Gheorghe<br>Tel: <a href="tel:+40727732954">0727 732 954</a></p>
+      <p>Felicia Silvia<br>Tel: <a href="tel:+40739490811">0739 490 811</a></p>
+      <p>E-mail: <a href="mailto:contact@globalada.ro">contact@globalada.ro</a></p>
+    </div>
+    <div>
+      <h4>Program</h4>
+      <p>Luni-Vineri: 9-17</p>
+      <p>Sâmbătă: 9-13</p>
+      <p>Duminică: Închis</p>
+    </div>
+  </div>
+  <a class="btn" href="mailto:contact@globalada.ro?subject=Cerere%20ofert%C4%83">CERE O OFERTĂ</a>
+  <span class="social">
+    <a href="https://www.facebook.com/GlobalAda" aria-label="Facebook">f</a>
+    <a href="https://wa.me/40739490811" aria-label="WhatsApp">W</a>
+  </span>
+</div></section>
+</main>
+<footer>Global Ada SRL</footer>
+</body>
+</html>

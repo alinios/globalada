@@ -77,9 +77,9 @@ h3{font-size:var(--step-lead);line-height:1.15}
 
 /* atelier */
 .atelier{row-gap:24px;align-items:start}
-.atelier h2{grid-column:1/6;grid-row:1}
-.atelier .statement{grid-column:1/6;grid-row:2;font-size:var(--step-lead);line-height:1.3;letter-spacing:-.02em}
-.atelier .txt{grid-column:7/13;grid-row:1/3;padding-top:.5em}
+.atelier h2{grid-column:1/9;grid-row:1}
+.atelier .txt{grid-column:1/7;grid-row:2}
+.atelier .statement{grid-column:8/13;grid-row:2;font-size:var(--step-lead);line-height:1.3;letter-spacing:-.02em}
 
 /* galerie */
 .gal{row-gap:clamp(24px,3vw,40px)}
@@ -89,26 +89,35 @@ h3{font-size:var(--step-lead);line-height:1.15}
 .gal .f2{grid-column:9/13;grid-row:2;margin-top:clamp(0px,5vw,72px)}
 
 /* mese */
-.head{display:grid;grid-template-columns:subgrid;grid-column:1/13;row-gap:20px;align-items:start}
-.head h2{grid-column:1/7}
-.head .intro{grid-column:7/13;max-width:46ch}
-.model{grid-column:span 4;margin-top:clamp(28px,3.5vw,48px)}
-.model .info{padding-top:16px}
+.aside{grid-column:1/5;position:sticky;top:24px;align-self:start}
+.aside h2{margin-bottom:20px}
+.models{grid-column:5/13;display:grid;gap:clamp(36px,4.5vw,64px)}
+.model{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:start}
 .info h3{margin-bottom:10px}
 .sizes{display:grid;grid-template-columns:repeat(auto-fill,minmax(7.5rem,1fr));gap:6px;margin-top:14px;font-variant-numeric:tabular-nums}
 .sizes li{background:var(--white);padding:10px 12px;font-weight:500;font-size:var(--step-small);color:var(--ink);white-space:nowrap}
 
 /* scaune */
-.chairs{grid-column:1/13;display:grid;grid-template-columns:subgrid;margin-top:clamp(28px,4vw,56px);row-gap:clamp(32px,5vw,56px)}
-.chair{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:start}
-.chair.a{grid-column:1/7}
-.chair.b{grid-column:7/13}
-.chair h3{margin-bottom:12px}
-.chair dl{display:grid;grid-template-columns:1fr auto;gap:5px 14px;font-size:var(--step-small)}
+.head{display:grid;grid-template-columns:subgrid;grid-column:1/13;row-gap:20px;align-items:start}
+.head h2{grid-column:1/7}
+.head .intro{grid-column:7/13;max-width:46ch}
+.chairs{grid-column:1/13;display:grid;grid-template-columns:repeat(4,1fr);background:var(--sand);margin-top:clamp(28px,4vw,56px)}
+.chair{display:contents}
+.chair.a figure{grid-column:1}
+.chair.a .spec{grid-column:2}
+.chair.b .spec{grid-column:3}
+.chair.b figure{grid-column:4}
+.chair figure{grid-row:1}
+.chair .spec{grid-row:1}
+.chair figure img{width:100%;height:100%;object-fit:cover}
+.chair .spec{padding:clamp(24px,3vw,44px)}
+.chair h3{margin-bottom:16px}
+.chair dl{display:grid;grid-template-columns:1fr auto;gap:8px 16px;font-size:var(--step-small)}
 .chair dt{color:var(--muted)}
 .chair dd{text-align:right;font-variant-numeric:tabular-nums}
-.chair .col{margin-top:16px;font-size:var(--step-small)}
-.chair .col b{display:block;font-weight:500;font-size:var(--step-body)}
+.colors{margin-top:24px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chips li{background:var(--white);padding:8px 12px;font-weight:500;font-size:var(--step-small)}
 
 /* contact */
 .contact{row-gap:clamp(28px,4vw,56px)}
@@ -150,8 +159,11 @@ h3{font-size:var(--step-lead);line-height:1.15}
  .gal .f1{grid-column:1/8;grid-row:auto}
  .gal .f2{grid-column:6/13;grid-row:auto;margin-top:0}
  .head h2,.head .intro{grid-column:1/13}
- .model{grid-column:1/13;margin-top:36px}
- .chair.a,.chair.b{grid-column:1/13}
+ .aside{grid-column:1/13;position:static}
+ .models{grid-column:1/13}
+ .model{grid-template-columns:1fr}
+ .chairs{grid-template-columns:1fr 1fr}
+ .chair.a figure,.chair.a .spec,.chair.b .spec,.chair.b figure{grid-column:auto;grid-row:auto}
  .contact h2,.reach,.facts,.foot{grid-column:1/13;grid-row:auto}
  .facts{grid-template-columns:1fr 1fr}
  .facts>div:first-child{grid-column:1/3}
@@ -159,8 +171,7 @@ h3{font-size:var(--step-lead);line-height:1.15}
 @media (max-width:479px){
  .gal .f1{grid-column:1/11}
  .gal .f2{grid-column:3/13}
- .chair{grid-template-columns:1fr}
- .chair figure{max-width:72%}
+ .chair figure{max-width:100%}
  .facts{grid-template-columns:1fr}
  .facts>div:first-child{grid-column:auto}
  .phones li{flex-direction:column;gap:0}
@@ -194,12 +205,12 @@ h3{font-size:var(--step-lead);line-height:1.15}
 
 <section class="grid atelier band" aria-labelledby="t-atelier">
   <h2 id="t-atelier" class="rv">Înființată în anul 2000</h2>
-  <p class="statement rv" style="--d:80ms">La noi aveți posibilitatea de a personaliza produsul comandat, selectând culoarea lemnului, a tapițeriei și dimensiunea blatului de masă conform preferințelor dumneavoastră.</p>
-  <div class="txt rv" style="--d:120ms">
+    <div class="txt rv" style="--d:80ms">
     <p>Ca un mic atelier de tâmplărie, SC GLOBAL ADA SRL a evoluat constant datorită ambiției și dorinței de a ne dezvolta. Prin seriozitate, promptitudine, calitate și profesionalism, am reușit să ne dotăm cu toate tipurile de utilaje necesare procesului de fabricație a meselor și scaunelor.</p>
     <p>În prezent, producem două modele de scaune din lemn de fag, care pot fi finisate conform cerințelor clienților în culorile alb, negru, wenge, stejar sau nuc. De asemenea, oferim mese cu blat neextensibil, disponibil în dimensiuni variind din 20 în 20&nbsp;cm, începând de la 1,20&nbsp;m și atingând până la 3&nbsp;m.</p>
     <p>Blatul meselor este fabricat din PAL de 34&nbsp;mm, bordurat cu lemn masiv și acoperit cu furnir natural de stejar, aplicat în presă caldă.</p>
   </div>
+  <p class="statement rv" style="--d:160ms">La noi aveți posibilitatea de a personaliza produsul comandat, selectând culoarea lemnului, a tapițeriei și dimensiunea blatului de masă conform preferințelor dumneavoastră.</p>
 </section>
 
 <section class="grid gal band" style="padding-top:0" aria-labelledby="t-gal">
@@ -214,24 +225,22 @@ h3{font-size:var(--step-lead);line-height:1.15}
       srcset="img/scaune-lemn-alb-mov-400.webp 400w, img/scaune-lemn-alb-mov-601.webp 601w"
       sizes="(min-width: 900px) 28vw, 80vw" width="601" height="793" loading="lazy" decoding="async"
       alt="Masă albă cu scaune din lemn alb tapițate în gri închis, cu un sfeșnic cu trei lumânări roșii"></div>
-    <figcaption class="cap">Scaune din lemn</figcaption>
   </figure>
   <figure class="f2 rv" style="--d:200ms">
     <div class="wipe"><img src="img/scaune-lemn-alb-gri-640.jpg"
       srcset="img/scaune-lemn-alb-gri-400.webp 400w, img/scaune-lemn-alb-gri-640.webp 640w"
       sizes="(min-width: 900px) 28vw, 80vw" width="640" height="849" loading="lazy" decoding="async"
       alt="Masă lungă albă cu scaune albe tapițate în bej, într-o cameră cu perdele deschise la culoare"></div>
-    <figcaption class="cap">Scaune din lemn</figcaption>
   </figure>
 </section>
 
 <section class="sand band" id="mese" aria-labelledby="t-mese">
  <div class="grid">
-  <div class="head">
+  <div class="aside">
     <h2 id="t-mese" class="rv">Mese</h2>
     <p class="intro rv" style="--d:80ms">Mesele cu blat neextensibil, disponibile în dimensiuni între 1,20&nbsp;m și 3&nbsp;m, au blat din PAL de 34&nbsp;mm, bordurat cu lemn masiv și acoperit cu furnir natural de stejar aplicat la presă caldă.</p>
   </div>
-
+  <div class="models">
   <article class="model">
     <figure class="pic rv">
       <div class="wipe"><img src="img/masa-carina-scaun-cami-1080.jpg"
@@ -285,6 +294,7 @@ h3{font-size:var(--step-lead);line-height:1.15}
       <p class="cap">Lungime × lățime</p>
     </div>
   </article>
+  </div>
  </div>
 </section>
 
@@ -295,15 +305,15 @@ h3{font-size:var(--step-lead);line-height:1.15}
     <p class="intro rv" style="--d:80ms">Scaunele Cami și Georgiana sunt realizate din lemn de fag și sunt finisate în culorile selectate de client. Pentru tapițare, utilizăm materiale țesute, cum ar fi stofa sau plușul.</p>
   </div>
 
-  <div class="chairs">
-    <article class="chair a rv">
+  <div class="chairs rv">
+    <article class="chair a">
       <figure>
         <img src="img/scaun-cami-768.jpg"
           srcset="img/scaun-cami-480.webp 480w, img/scaun-cami-768.webp 768w, img/scaun-cami-1152.webp 1152w"
-          sizes="(min-width: 900px) 22vw, 80vw" width="768" height="1024" loading="lazy" decoding="async"
+          sizes="(min-width: 900px) 24vw, 80vw" width="768" height="1024" loading="lazy" decoding="async"
           alt="Scaunul Cami: lemn de fag brun închis, spătar înalt cu cinci lamele și tapițerie bej">
       </figure>
-      <div>
+      <div class="spec">
         <h3>Scaun Cami</h3>
         <dl>
           <dt>înălțime totală</dt><dd>1,05&nbsp;m</dd>
@@ -311,18 +321,21 @@ h3{font-size:var(--step-lead);line-height:1.15}
           <dt>adâncime șezut</dt><dd>0,41&nbsp;m</dd>
           <dt>lățime față șezut</dt><dd>0,47&nbsp;m</dd>
         </dl>
-        <p class="col"><span class="small">Culori disponibile la comandă</span><b>alb, negru, wenge, stejar sau nuc</b></p>
+        <div class="colors">
+        <p class="small">Culori disponibile la comandă</p>
+        <ul class="chips"><li>alb</li><li>negru</li><li>wenge</li><li>stejar</li><li>nuc</li></ul>
+        </div>
       </div>
     </article>
 
-    <article class="chair b rv" style="--d:100ms">
+    <article class="chair b">
       <figure>
         <img src="img/scaun-georgiana-768.jpg"
           srcset="img/scaun-georgiana-480.webp 480w, img/scaun-georgiana-768.webp 768w, img/scaun-georgiana-1152.webp 1152w"
-          sizes="(min-width: 900px) 22vw, 80vw" width="768" height="1024" loading="lazy" decoding="async"
+          sizes="(min-width: 900px) 24vw, 80vw" width="768" height="1024" loading="lazy" decoding="async"
           alt="Scaunul Georgiana: lemn de fag brun închis, spătar curbat cu tapițerie albastru închis">
       </figure>
-      <div>
+      <div class="spec">
         <h3>Scaun Georgiana</h3>
         <dl>
           <dt>înălțime totală</dt><dd>1,05&nbsp;m</dd>
@@ -330,7 +343,10 @@ h3{font-size:var(--step-lead);line-height:1.15}
           <dt>adâncime șezut</dt><dd>0,41&nbsp;m</dd>
           <dt>lățime față șezut</dt><dd>0,47&nbsp;m</dd>
         </dl>
-        <p class="col"><span class="small">Culori disponibile la comandă</span><b>alb, negru, wenge, stejar sau nuc</b></p>
+        <div class="colors">
+        <p class="small">Culori disponibile la comandă</p>
+        <ul class="chips"><li>alb</li><li>negru</li><li>wenge</li><li>stejar</li><li>nuc</li></ul>
+        </div>
       </div>
     </article>
   </div>

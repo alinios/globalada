@@ -199,6 +199,14 @@ h3{font-size:var(--step-lead);line-height:1.15}
 .facts p{font-size:var(--step-body)}
 .foot{grid-column:1/13;grid-row:3}
 
+/* cookie notice */
+.cookie-notice{position:fixed;z-index:30;right:clamp(16px,3vw,40px);bottom:clamp(16px,3vw,40px);max-width:36rem;padding:18px 20px;background:var(--ink);color:var(--white);box-shadow:0 12px 36px rgba(0,0,0,.2);font-size:var(--step-small);line-height:1.45}
+.cookie-notice p{max-width:48ch}
+.cookie-notice a{text-decoration-color:var(--accent)}
+.cookie-notice button{margin-top:14px;padding:8px 14px;border:1px solid var(--white);background:transparent;color:var(--white);font:inherit;font-weight:500;cursor:pointer}
+.cookie-notice button:hover{background:var(--white);color:var(--ink)}
+.cookie-notice[hidden]{display:none}
+
 /* motion */
 .js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
 .js .rv.in{opacity:1;transform:none}
@@ -250,6 +258,7 @@ h3{font-size:var(--step-lead);line-height:1.15}
  .facts>div:first-child{grid-column:auto}
  .phones li{flex-direction:column;gap:0}
  .sizes{grid-template-columns:1fr 1fr}
+ .cookie-notice{left:16px;right:16px;bottom:16px;max-width:none}
 }
 </style>
 </head>
@@ -452,9 +461,14 @@ h3{font-size:var(--step-lead);line-height:1.15}
         <p><a href="https://www.facebook.com/GlobalAda" rel="noopener">Facebook</a><br><a href="https://wa.me/40739490811" rel="noopener">WhatsApp</a></p>
       </div>
     </div>
-    <p class="small foot"><span translate="no">SC Global Ada SRL</span>, Sighetu Marmației</p>
+    <p class="small foot"><span translate="no">SC Global Ada SRL</span>, Sighetu Marmației · <a href="cookie-uri.html">Cookie-uri și tehnologii similare</a></p>
   </div>
 </footer>
+
+<aside class="cookie-notice" id="informare-cookie" aria-label="Informare despre cookie-uri">
+  <p>Acest site folosește numai tehnologii strict necesare funcționării și securității sale. Nu folosim cookie-uri pentru analiză, marketing sau publicitate. <a href="cookie-uri.html">Detalii</a></p>
+  <button type="button" data-dismiss-cookie>Am înțeles</button>
+</aside>
 
 <script>
 (function(){
@@ -463,6 +477,11 @@ h3{font-size:var(--step-lead);line-height:1.15}
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
     els.forEach(function(el){io.observe(el)});
   }else{els.forEach(function(el){el.classList.add('in')})}
+})();
+(function(){
+  var notice=document.getElementById('informare-cookie');
+  var button=document.querySelector('[data-dismiss-cookie]');
+  if(button){button.addEventListener('click',function(){notice.hidden=true})}
 })();
 </script>
 </body>

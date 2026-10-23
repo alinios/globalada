@@ -208,10 +208,10 @@ h3{font-size:var(--step-lead);line-height:1.15}
 .cookie-notice button:hover{background:var(--white);color:var(--ink)}
 .cookie-notice[hidden]{display:none}
 .cookie-expand{display:none}
-.cookie-notice.is-compact{display:flex;align-items:center;gap:10px;max-width:19rem;padding:8px 10px;box-shadow:0 8px 22px rgba(0,0,0,.18);animation:cookie-settle .45s cubic-bezier(.2,.7,.2,1)}
-.cookie-notice.is-compact .cookie-copy{max-width:0;max-height:0;overflow:hidden;opacity:0;pointer-events:none;transition:opacity .18s ease,max-width .28s ease,max-height .28s ease}
-.cookie-notice.is-compact .cookie-expand{display:block;margin:0;white-space:nowrap}
-.cookie-notice.is-compact [data-dismiss-cookie]{margin:0;white-space:nowrap}
+.cookie-notice.is-compact{left:clamp(16px,3vw,40px);right:auto;display:flex;align-items:center;gap:10px;max-width:19rem;padding:8px 10px;box-shadow:0 8px 22px rgba(0,0,0,.18);animation:cookie-settle .45s cubic-bezier(.2,.7,.2,1)}
+.cookie-notice.is-compact .cookie-copy{display:none}
+.cookie-notice.is-compact button{margin:0;padding:8px 12px;border:1px solid var(--white);white-space:nowrap}
+.cookie-notice.is-compact .cookie-expand{display:block}
 @keyframes cookie-settle{0%{transform:translateY(12px);opacity:.7}100%{transform:none;opacity:1}}
 
 /* motion */

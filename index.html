@@ -502,15 +502,27 @@ h3{font-size:var(--step-lead);line-height:1.15}
   }
   if(button){button.addEventListener('click',function(){notice.hidden=true})}
   if(expand){expand.addEventListener('click',function(){setCompact(false)})}
-  function maybeCompact(){
-    if(!compacted&&gallery&&window.scrollY>=gallery.offsetTop){
+  function compact(){
+    if(!compacted){
       compacted=true;
       setCompact(true);
-      window.removeEventListener('scroll',maybeCompact);
     }
   }
-  window.addEventListener('scroll',maybeCompact,{passive:true});
-  maybeCompact();
+  if('IntersectionObserver' in window&&gallery){
+    var cookieObserver=new IntersectionObserver(function(entries){
+      if(entries[0].isIntersecting){
+        compact();
+        cookieObserver.disconnect();
+      }
+    });
+    cookieObserver.observe(gallery);
+  }else{
+    function maybeCompact(){
+      if(gallery&&gallery.getBoundingClientRect().top<=window.innerHeight){compact();window.removeEventListener('scroll',maybeCompact)}
+    }
+    window.addEventListener('scroll',maybeCompact,{passive:true});
+    maybeCompact();
+  }
 })();
 </script>
 </body>
